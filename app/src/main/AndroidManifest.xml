@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".application.RegistrationApp"
+        android:allowBackup="true"
+        android:theme="@style/Theme.PendaftaranPondokPesantrenApp">
+
+    <activity
+        android:name=".LoginMainActivity2"
+        android:exported="false" />
+    <activity
+        android:name=".RegisterActivity"
+        android:exported="false" />
+    <activity
+        android:name=".LoginMainActivity1"
+        android:exported="false" />
+    <activity
+        android:name=".SplashScreenActivity"
+        android:exported="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.PendaftaranPondokPesantrenApp">
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyBrp34tXifHPmM2XPW_GxK4e0nTGvw-Ki8" />
+
+    <activity
+        android:name=".MainActivity"
+        android:exported="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.PendaftaranPondokPesantrenApp" />
+</application>
+
+    </manifest>
